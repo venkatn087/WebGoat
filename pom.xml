@@ -146,6 +146,7 @@
         <xml-resolver.version>1.2</xml-resolver.version>
         <xstream.version>1.4.18</xstream.version> <!-- do not update necessary for lesson -->
         <zxcvbn.version>1.5.2</zxcvbn.version>
+        <jackson.version>2.9.4</jackson.version>
     </properties>
 
     <dependencyManagement>
@@ -185,6 +186,11 @@
                 <groupId>ant</groupId>
                 <artifactId>ant-launcher</artifactId>
                 <version>${ant.version}</version>
+            </dependency>
+            <dependency>
+               <groupId>com.fasterxml.jackson.core</groupId>
+               <artifactId>jackson-databind</artifactId>
+               <version>${jackson.version}</version>
             </dependency>
             <dependency>
                 <groupId>ant</groupId>
